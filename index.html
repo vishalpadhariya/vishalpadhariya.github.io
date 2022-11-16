@@ -744,7 +744,7 @@
         <a href="https://in.linkedin.com/in/vishal-padhariya-526839184" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>Vishal Padhariya</span></strong>. All Rights Reserved
+        &copy;<span id="year"></span> Copyright <strong><span>Vishal Padhariya</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
@@ -772,6 +772,12 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    const d = new Date();
+    let year = d.getFullYear();
+    document.getElementById("year").innerHTML = year;
+    </script>
 
 </body>
 
